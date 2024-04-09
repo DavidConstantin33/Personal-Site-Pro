@@ -9,6 +9,12 @@ body {
     background-color: white;
 }
 
+@media only screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden!important;
+    }
+}
+
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -50,6 +56,13 @@ ul {
     margin-right: 3rem;
 }
 
+@media only screen and (max-width: 800px) {
+    .head {
+        width: 100vw;
+        font-size: 10px;
+    }
+}
+
 .central--img__bg {
     position: fixed;
     top: 0;
@@ -75,6 +88,29 @@ video {
     box-shadow: 0 5px 5px 5px grey;
     height: 18rem;
     width: 18rem;
+}
+
+@media only screen and (max-width: 900px) {
+.central--image {
+     height: 18rem;
+    margin: 2em 0 0 0;
+}
+    .central--image img {
+        width: 10em;
+        height: 10em;
+    }
+    .central--img__bg {
+        height: 400px;
+    }
+    .central--img__bg video {
+        height: 400px;
+        -moz-transform:scale(1.5);
+        -webkit-transform:scale(1.5);
+        -o-transform:scale(1.5);
+        -ms-transform:scale(1.5);
+        transform:scale(1.5);
+
+    }
 }
 
 .section {
@@ -112,6 +148,12 @@ video {
     height: auto;
 }
 
+@media only screen and (max-width: 900px) {
+    .section {
+        padding: 0 0 10em 0;
+    }
+}
+
 .section--video {
     background-color: white;
     width: 100vw;
@@ -141,6 +183,13 @@ video {
     width: 700px;
     height: auto;
     box-shadow: 0 5px 5px 5px grey;
+}
+
+@media only screen and (max-width: 900px) {
+    .section--video video {
+        width: 90%;
+        padding: 5em 0 5em 0;
+    }
 }
 
 .section2 {
@@ -178,6 +227,16 @@ video {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 5px 5px 5px grey;
+}
+
+@media only screen and (max-width: 900px) {
+    .carousel--item {
+        width: 300px;
+    }
+
+    .carousel--item img {
+        width: 300px;
+    }
 }
 
 .section3 {
@@ -221,6 +280,18 @@ video {
 .contact--info img {
     width: 10em;
     height: 10em;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact--info {
+        gap:2em;
+        margin-top: 50px;
+    }
+
+    .contact-parent img {
+        width: 5em;
+        height: 5em;
+    }
 }
 
 footer {
